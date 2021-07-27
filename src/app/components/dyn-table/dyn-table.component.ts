@@ -1,11 +1,10 @@
 import {
     AfterContentInit, Component, ContentChild,
-    ContentChildren, EventEmitter, Input,
-    OnChanges, OnInit, ViewChildren,
-    Output, QueryList, ViewChild
+    ContentChildren, Input,
+    OnChanges, QueryList, ViewChild
 } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
-import { MatSort, MatSortable, MatSortHeader } from '@angular/material/sort';
+import { MatSort } from '@angular/material/sort';
 import { MatColumnDef, MatHeaderRowDef, MatRowDef, MatTable, MatTableDataSource } from '@angular/material/table';
 import { DynColumnComponent } from './dyn-column.component';
 

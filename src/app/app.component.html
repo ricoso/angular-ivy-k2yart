@@ -3,11 +3,11 @@
 
 <app-dyn-table [data]="users" [displayedColumns]="displayedColumns" matSort>
 
-  	<app-dyn-column name="name"></app-dyn-column>
+  	<app-dyn-column [name]="'name'"></app-dyn-column>
 
-	  <app-dyn-column name="obid" label="ID"></app-dyn-column>
+	  <app-dyn-column [name]="'obid'" [label]="'ID'"></app-dyn-column>
 
-  	<app-dyn-column name="col3"></app-dyn-column>
+  	<app-dyn-column [name]="'col3'"></app-dyn-column>
 
     <!--<ng-container matColumnDef="obid">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>

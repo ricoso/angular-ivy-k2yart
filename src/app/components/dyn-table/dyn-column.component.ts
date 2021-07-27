@@ -61,7 +61,7 @@ export class DynColumnComponent<T> implements OnDestroy, OnInit {
 
     @ViewChild(MatColumnDef, { static: true }) columnDef: MatColumnDef;
 
-    @ViewChild(MatSortHeader, { static: false }) sortHeader: MatSortHeader;
+    @ViewChild(MatSortHeader) sortHeader: MatSortHeader;
 
     constructor(
         @Optional() public table: MatTable<any>
