@@ -40,7 +40,10 @@ export class DynTableComponent<T> implements OnChanges, AfterContentInit {
   }
 
   ngAfterContentInit() {
-    // console.log(this.dynColumns, this.columnDefs);
+    console.log(':::', this.dynColumns);
+    console.log(':::', this.columnDefs);
+    console.log(':::', this.table);
+    console.log(':::', this.sort);
     this.dynColumns.forEach(dynColumn => this.table.addColumnDef(dynColumn.columnDef));
     this.columnDefs.forEach(columnDef => this.table.addColumnDef(columnDef));
 
